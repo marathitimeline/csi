@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <style>
+body {
+  background-image: url('../assets/b111.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style>
+<head>
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="stylesheeet.css">
+<link rel="stylesheet" href="stylesheeeet.css">
+
+ <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<title>Event Info</title>
+
+ <link rel = "icon" href =  
+"../assets/csi1logo.png" 
+        type = "image/x-icon"> 
+</head>
+<body>
+<!-- code for locked menu bar started -->
+
+
+<nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <a href="csi.dypvp.edu.in">CSI-DIT</a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="za.html">EVENTS</a></li>
+        <li><a href="magzine.html">DOWNLOADS</a></li>
+        <li><a href="boardd.html">BOARD</a></li>
+      
+	<li><a href="aboutt.html">ABOUT</a></li>
+<li><a href="index.html#contact">CONTACT</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > -1 ? navbar.classList.add("sticky") :navbar.classList.remove("sticky");
+    }
+  </script>
+<!-- code for locked menu bar ended -->
+<section class="text-gray-700 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap -mx-4 -mb-10 text-center">
+      <div class="sm:w-1/2 mb-10 px-4">
+       <a href=currenteve.html>
+ <div class="rounded-lg h-64 overflow-hidden">
+          <img  alt="content" class="object-cover object-center h-full w-full" src="../assets/csiteam7.jpg">
+        </div> </a>
+        <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3"><a href="currenteve.html">Recent Events</a></h2>
+        <p class="leading-relaxed text-base">You will find recent Events held by CSI-DIT here.</p>
+        <button class="flex mx-auto mt-6 text-white bg-red-500 border-0 py-2 px-5 focus:outline-none hover:bg-red-600 rounded"><a href="currenteve.html">view</a></button>
+      </div>
+      <div class="sm:w-1/2 mb-10 px-4">
+      <a href="pastevents.html"> 
+ <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="../assets/acu.jpeg">
+        </div> </a>
+        <h2  class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3"><a href="eventinfo.html"> Past Events</a></h2>
+        <p class="leading-relaxed text-base">You will find past Events held by CSI-DIT here.</p>
+        <button class="flex mx-auto mt-6 text-white bg-red-500 border-0 py-2 px-5 focus:outline-none hover:bg-red-600 rounded"><a href="eventinfo.html">view</a></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+
+
+
+
+
+
+
+
+
+</body>
+</html>

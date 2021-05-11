@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="stylesheeet.css">
+<link rel="stylesheet" href="stylesheeeet.css">
+ <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<title>Board</title>
+
+ <link rel = "icon" href =  
+"../assets/csi1logo.png" 
+        type = "image/x-icon"> 
+</head>
+
+
+ <style>
+body {
+  background-image: url('../assets/b111.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style> 
+
+<body>
+
+
+<!-- code for locked menu bar started -->
+
+<nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <a href="index.html">CSI-DIT</a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="za.html">EVENTS</a></li>
+        <li><a href="magzine.html">DOWNLOADS</a></li>
+        <li><a href="boardd.html">BOARD</a></li>
+      
+	<li><a href="aboutt.html">ABOUT</a></li>
+<li><a href="index.html#contact">CONTACT</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > -1 ? navbar.classList.add("sticky") :navbar.classList.remove("sticky");
+    }
+  </script>
+
+<!-- code for locked menu bar ended -->
+
+
+
+
+<section class="text-gray-700 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap w-full mb-20">
+      <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">CSI-DIT WORKING COMMITTEE</h1>
+        <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+      </div>
+     </div>
+    <div class="flex flex-wrap -m-4">
+      <div class="xl:w-1/4 md:w-1/2 p-4">
+        <div class="bg-gray-100 p-6 rounded-lg">
+<a href="bod.html">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="../assets/2019.jpg" alt="content">
+         <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">year</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">2019-2020</h2>
+</a> 
+          <p class="leading-relaxed text-base">The CSI-DIT board 2020 was lead by Presidnt Mr.Sajal suhane and voice president Mr. shubham maral.  </p>
+        </div>
+      </div>
+      <div class="xl:w-1/4 md:w-1/2 p-4">
+        <div class="bg-gray-100 p-6 rounded-lg">
+<a href="bod2021.html">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="../assets/22020.jpg" alt="content">
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">year</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">2020-2021 (Associate)</h2>
+</a>
+          <p class="leading-relaxed text-base">The CSI-DIT board 2020 was lead by Presidnt Mrs. Mansi Narwade and voice president Mr. Tanishq Jena.</p>
+        </div>
+      </div>
+      <div class="xl:w-1/4 md:w-1/2 p-4">
+        <div class="bg-gray-100 p-6 rounded-lg">
+<a href="bod2021j.html">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="../assets/22020.jpg" alt="content">
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">year</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">2020-2021 (Assistant)</h2>
+</a>
+          <p class="leading-relaxed text-base">The CSI-DIT board 2020 was lead by president Mrs. Mansi Narwade and voice president Mr. Tanishq Jena.</p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+</body>
+
+</html>
